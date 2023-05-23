@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./asset/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/assets/owl.theme.default.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Blinker:wght@900&family=Poppins&family=Roboto:wght@900&family=Sofia+Sans+Extra+Condensed:wght@900&display=swap" rel="stylesheet"><link rel="stylesheet" href="./library/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./asset/main.css">
     <title>Scary movie</title>
@@ -37,12 +40,12 @@
                             </a>
                         </li>
                             <li>
-                                <a href="">
+                                <a href="#footer">
                                     Liên hệ
                             </a>
                         </li>
                             <li>
-                                <a href="">
+                                <a href="#footer">
                                     Hướng dẫn
                             </a>
                         </li>
@@ -149,7 +152,7 @@
                 </div>
                 <div class="container">
                     <div class="row">
-                        <div class="col-12 nav-film " style="background-image: url(./library/img/news.jpg);">
+                        <div class="col-12 nav-film  " style="background-image: url(./library/img/news.jpg);">
 
                             <h5>
                                 Phim mới
@@ -158,8 +161,7 @@
                                 <i class="fa-solid fa-caret-down"></i>
                             </button>
                         </div>
-                        <div class="col-12 nav-film " style="background-image: url(./library/img/hot.jpg);
-                        ">
+                        <div class="col-12 nav-film open-nav-film" style="background-image: url(./library/img/hot.jpg);">
 
                             <h5>
                                 Phim nổi bật
@@ -167,7 +169,57 @@
                             <button>
                                 <i class="fa-solid fa-caret-down"></i>
                             </button>
-                        </div><div class="col-12 nav-film " style="background-image: url(./library/img/ghost---storysize_647_092315101820.webp);">
+                            <div class="owl-carousel owl-theme slide">
+                                <a class="item film">
+                                    <img src="./library/img/raw movie.jpg" alt="">
+                                    <div class="evaluate">
+                                        7.0
+                                    </div>
+                                    <div class="name-film">
+                                        Bản năng gốc
+                                    </div>
+
+                                </a>
+                                <a class="item film">
+                                    <img src="./library/img/raw movie.jpg" alt="">
+                                    <div class="evaluate">
+                                        7.0
+                                    </div>
+                                    <div class="name-film">
+                                        Bản năng gốc
+                                    </div>
+
+                                </a>  <a class="item film">
+                                    <img src="./library/img/raw movie.jpg" alt="">
+                                    <div class="evaluate">
+                                        7.0
+                                    </div>
+                                    <div class="name-film">
+                                        Bản năng gốc
+                                    </div>
+
+                                </a>  <a class="item film">
+                                    <img src="./library/img/raw movie.jpg" alt="">
+                                    <div class="evaluate">
+                                        7.0
+                                    </div>
+                                    <div class="name-film">
+                                        Bản năng gốc
+                                    </div>
+
+                                </a>  <a class="item film">
+                                    <img src="./library/img/raw movie.jpg" alt="">
+                                    <div class="evaluate">
+                                        7.0
+                                    </div>
+                                    <div class="name-film">
+                                        Bản năng gốc
+                                    </div>
+
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-12 nav-film open-nav-film " style="background-image: url(./library/img/ghost---storysize_647_092315101820.webp);">
 
                             <h5>
                                 Ma quỷ
@@ -175,7 +227,8 @@
                             <button>
                                 <i class="fa-solid fa-caret-down"></i>
                             </button>
-                        </div><div class="col-12 nav-film " style="">
+                        </div>
+                        <div class="col-12 nav-film " style="background-image: url(./library/img/zombie.jpg);">
 
                             <h5>
                                 Zombie
@@ -183,7 +236,8 @@
                             <button>
                                 <i class="fa-solid fa-caret-down"></i>
                             </button>
-                        </div><div class="col-12 nav-film " style="">
+                        </div>
+                        <div class="col-12 nav-film " style="background-image: url(./library/img/jack.webp);">
 
                             <h5>
                                 sát nhân
@@ -270,12 +324,13 @@
 
         </div>
     </div>
+    <script src="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/vendors/jquery.min.js"></script>
+    <script src="./OwlCarousel2-2.3.4/OwlCarousel2-2.3.4/docs/assets/owlcarousel/owl.carousel.min.js"></script>
     
-  
    <Script src="./library/axios.min.js"></Script>
    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-   <script src="./library/bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
    <script src="./asset/main.js"></script>
 </body>
 

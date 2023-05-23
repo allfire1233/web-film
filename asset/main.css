@@ -85,6 +85,7 @@ body{
     font-weight: 400 ;
     text-align: center;
     color: #fff;
+    margin-top: 26px;
 }
 .level-scary{
     position: relative;
@@ -183,32 +184,88 @@ body{
 }
 
 .nav-film{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    display: block;
+    position: relative;
     background-color: #fff;
     margin: 48px 0px 48px 0;   
     border-radius: 25px;
     cursor: pointer;
     border: 1px solid #fff;
-
+    height: 60px;
+}
+.open-nav-film{
+    height: 445px!important;
 }
 .nav-film h5{
+    position: absolute;
+    top: 0;
+    left: 15px;
     font-weight: 400;
     font-size: 41px;
     color: #fff;
 }
 .nav-film button{
+    position: absolute;
+    top: 10px;
+    right: 15px;
     height: 30px;
     width: 30px;
-    border: none;
+    border: 1px solid #fff;
+    background: none;
+    border-radius: 50%;
 }
 .nav-film button i{
     font-size: 30px;
+    color: #fff;
 }
-.nav-film button:hover{
+.nav-film button i:hover{
     color: #D21312;
 }
+.slide{
+    margin-top: 50px;
+    display: block;
+}
+.slide .film{
+    margin-top: 50px;
+    width: 400px;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
+.film img{
+   object-fit: cover;
+   border-radius: 25px;
+   position: relative;
+   width: 100%;
+}
+.evaluate{
+    background-color: #D21312;
+    height: 50px;
+    width: 50px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 25px;
+}
+.name-film{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #D21312;
+    height: 100px;
+    display: flex;
+    color: #fff;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 25px 25px;
+}
+
+
 #footer{
     background-color: #fff;
     border-top: 1px solid #D21312;
